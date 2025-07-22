@@ -1,0 +1,19 @@
+{
+  "total_vectors": 1007,
+  "dimension": 384,
+  "similarity_threshold": 0.15,
+  "is_trained": true,
+  "total_documents": 2,
+  "document_list": [
+    {
+      "document_id": "doc_16870_final_bd91791e",
+      "title": "ROBERTO SEBASTIANI, University of Trento, DISI, Italy",
+      "chunk_count": 674
+    },
+    {
+      "document_id": "doc_Artificialintelligenceinmarketingexploringcurrentandfuturetrends_727c0a89",
+      "title": "See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/",
+      "chunk_count": 333
+    }
+  ]
+}
