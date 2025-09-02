@@ -83,6 +83,22 @@ class Config:
     query_timeout: int = 30
     enable_caching: bool = True
     
+    # Performance Optimization Settings
+    cache_ttl_seconds: int = 3600  # 1 hour cache TTL
+    max_context_length: int = 8000  # Maximum context characters
+    
+    # Dynamic Search Settings (automatically configured based on query type)
+    # These thresholds are used by the optimized query processor:
+    # - DIRECT_LOOKUP: 0.4 (high precision)
+    # - COMPARISON: 0.25 (diverse sources)  
+    # - SUMMARIZATION: 0.2 (broad coverage)
+    # - METRIC_EXTRACTION: 0.35 (specific data)
+    # - GENERAL_SEARCH: 0.3 (balanced)
+    
+    # Content Quality Settings
+    duplicate_similarity_threshold: float = 0.85  # Threshold for removing duplicate chunks
+    min_content_quality_score: float = 0.1  # Minimum content quality to include chunk
+    
     # Parallel Processing
     max_workers: int = 4
     batch_size: int = 10
